@@ -1,0 +1,136 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/********************************************************top panel **************************************************/
+#topscreen
+{
+  width:320px; 
+  height:218px; 
+  overflow: hidden;
+  background-image: image-url("logo.png");
+  background-color: #f8dce0;
+}
+
+#message
+{
+  width:160px; 
+  height:218px; 
+  overflow: hidden;
+  background-color: #f8dce0;
+  float:left;
+}
+
+#cat
+{
+  width:160px; 
+  height:218px; 
+  overflow: hidden;
+  background-color: #f8dce0;
+  float:left;
+}
+
+
+
+/********************************************************speech css for balloon**************************************************/
+
+p.speech
+{
+  position: relative;
+  width: 130px;
+  height: 150px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  border: 5px solid #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+
+
+p.speech:before
+{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50px;
+  top: 150px;
+  border: 15px solid;
+  border-color: #666 transparent transparent #666;
+}
+
+p.speech:after
+{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 58px;
+  top: 150px;
+  border:10px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
+
+/*******************************************************bottom panel -  Talk **************************************************/
+
+#bottomscreen
+{
+  width:320px; 
+  height:212px; 
+  overflow: hidden;
+  background-color: #f8dce0;
+}
+
+#menu
+{
+  width:320px; 
+  height:45px; 
+  overflow: hidden;
+  background-color: #371B2C;
+}
+
+#icon
+{
+  width:320;
+  min-width:920px; 
+  height:130px; 
+  float:left;
+  overflow: auto;
+  overflow-x: scroll ; 
+  overflow-y: hidden;
+  background-color: #D1D6E7 ;
+}
+#input
+{
+  width:320px; 
+  height:37px; 
+  overflow: hidden;
+  background-color: #f8dce0;;
+}
+
+/*******************************************************bottom panel -  Task **************************************************/
+
+#task-icon
+{
+  width:320;
+  height:170px; 
+  float:left;
+  overflow: hidden;
+  background-color: #D1D6E7 ;
+}
+
+#task-button
+{
+  width:90;
+  height:90px; 
+  float:left;
+  overflow: hidden;
+  background-color: #D1D6E7 ;
+}

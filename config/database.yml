@@ -3,10 +3,10 @@ mysql: &mysql
   encoding: utf8
   reconnect: false
   pool: 5
-  host: "<%= ENV["C4SA_MYSQL_HOST"] %>"
-  database: "<%= ENV["C4SA_MYSQL_DB"] %>"
-  username: "<%= ENV["C4SA_MYSQL_USER"] %>"
-  password: "<%= ENV["C4SA_MYSQL_PASSWORD"] %>"
+  host: "175.184.35.36 "
+  database: "cmw6k03_agj"
+  username: "cmw6k03_agj"
+  password: "c4xKrVCf"
 
 development:
   <<: *mysql

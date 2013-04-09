@@ -1,0 +1,46 @@
+<div id="topscreen" >
+    <div id="cat">
+      <%= image_tag "cat.jpg",:size=>"160x218",:alt=>"cat" %>
+    </div>
+    <div id="message">
+       <p class="speech">This is House task!</p>
+	</div>
+</div>
+<div id="bottomscreen" >
+    <form name="messages" onSubmit="return false"> 
+		<div id="menu">
+			<%= link_to image_tag("button/button.png", alt: "b_talk",  width:"78", height:"40"), "/kid/talk" %>
+            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"75", height:"40"), "/kid/task/home" %>
+            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"75", height:"40"), "/kid/item/" %>
+            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"75", height:"40"), "/kid/item/" %>    
+           
+		</div>
+		<div id="task-icon">
+           <div id="task-button">
+              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"80", height:"80"), "kid/talk" %>
+           </div> 
+            <div id="task-button">
+              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"80", height:"80"), "kid/talk" %>
+           </div>            
+            <div id="task-button">
+              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"80", height:"80"), "kid/talk" %>
+           </div> 
+           <div id="task-button">
+              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"80", height:"80"), "kid/talk" %>
+           </div> 
+           <div id="task-button">
+              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"80", height:"80"), "kid/talk" %>
+           </div> 
+            <div id="task-button">
+              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"80", height:"80"), "kid/talk" %>
+           </div>            
+            <div id="task-button">
+              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"80", height:"80"), "kid/talk" %>
+           </div> 
+           <div id="task-button">
+              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"80", height:"80"), "kid/talk" %>
+           </div> 
+
+		</div>
+    </form>
+</div>
