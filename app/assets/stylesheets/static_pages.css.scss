@@ -91,21 +91,23 @@ p.speech:after
 #menu
 {
   width:320px; 
-  height:45px; 
+  height:42px; 
   overflow: hidden;
   background-color: #371B2C;
+  padding: 4px;
 }
 
 #icon
 {
   width:320;
   min-width:920px; 
-  height:130px; 
+  height:115px; 
   float:left;
   overflow: auto;
   overflow-x: scroll ; 
   overflow-y: hidden;
   background-color: #D1D6E7 ;
+  padding-top: 15px;
 }
 #input
 {
@@ -123,14 +125,65 @@ p.speech:after
   height:170px; 
   float:left;
   overflow: hidden;
-  background-color: #D1D6E7 ;
+  background-color:#9A7596 ;
+  padding:4px;
 }
 
-#task-button
+.task-button
 {
-  width:90;
-  height:90px; 
+  width:55px;
+  height:55px; 
   float:left;
   overflow: hidden;
-  background-color: #D1D6E7 ;
+  background-color: #FADBF7;
+  border: solid #4E1249;
+  padding: 4px;
+  margin: 4px; 
 }
+
+/*******************************************************bottom panel -  Task - do  **************************************************/
+
+#task-confirm
+{
+  width:320;
+  height:170px; 
+  float:left;
+  overflow: hidden;
+  background-color:#9A7596 ;
+  padding:4px;
+}
+
+#task-confirm-message
+{
+  width:320;
+  height:40px; 
+  overflow: hidden;
+  background-color:#9A7596 ;
+  padding:4px;
+  color:white;
+  text-align: center;
+}
+
+#task-image-confirm
+{
+  width:320;
+  height:40px; 
+  overflow: hidden;
+  background-color:#9A7590 ;
+  padding:4px;
+ text-align: center; 
+}
+
+#select-button
+{
+  width:310px;
+  height:42px; 
+  float:left;
+  overflow: hidden;
+  background-color: #FADBF7;
+  border: solid #4E1249;
+  text-align: center;
+}
+
+
+

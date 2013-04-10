@@ -9,6 +9,7 @@ class StaticPagesController < ApplicationController
   end
 
   def k_task_doing
+
   end
 
   def k_task_finish

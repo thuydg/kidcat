@@ -1,2 +1,32 @@
-<h1>StaticPages#k_task_doing</h1>
-<p>Find me in app/views/static_pages/k_task_doing.html.erb</p>
+<div id="topscreen" >
+       <div id="cat">
+		<%= video_tag "cat.mp4", :size => "160x240", :controls => true %>
+       </div>
+       <div id="message">
+          <p class="speech">Let's do together!</p>
+	</div>
+</div>
+<div id="bottomscreen" >
+    <form name="messages" onSubmit="return false"> 
+		<div id="menu">
+	    <%= link_to image_tag("button/button.png", alt: "b_talk",  width:"72", height:"41"), "/kid/talk" %>
+            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"72", height:"41"), "/kid/task/home" %>
+            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>
+            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>               
+		</div>
+		<div id="task-confirm">
+			<center>
+				<div id="task-confirm-message">	
+					<h4>I have finished this!</h4>
+				</div>
+				<div id="task-image-confirm">
+	                                <%= image_tag "button/task.png",:size=>"60x30",:alt=>"task" %>	
+				</div>
+				<div id="select-button">
+                                       <%= link_to image_tag("button/button.png", alt: "b_task",  width:"70", height:"40"), "/kid/task/finish" %>
+                                </div>        
+		       </center>
+		</div>
+    </form>
+</div>
+<script>document.body.scrollTop='218';</script>

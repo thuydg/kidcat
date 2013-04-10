@@ -15,8 +15,9 @@ RailsApp::Application.routes.draw do
 
   match '/kid/talk', to: 'static_pages#k_talk'
   match '/kid/task/home', to: 'static_pages#k_task_home'
-  match '/kid/task/do', to: 'static_pages#k_task_do'
+  match '/kid/task/do/:id', to: 'static_pages#k_task_do'
   match '/kid/task/doing', to: 'static_pages#k_task_doing'
+  match '/kid/task/doing/:id', to: 'static_pages#k_task_doing'
   match '/kid/task/finish', to: 'static_pages#k_task_finish'
   match '/kid/item', to: 'static_pages#k_item'
   match '/kid/cat/up', to: 'static_pages#k_cat_up'
