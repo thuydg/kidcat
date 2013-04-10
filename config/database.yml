@@ -1,0 +1,15 @@
+mysql: &mysql
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  host: "175.184.35.36 "
+  database: "cmw6k03_agj"
+  username: "cmw6k03_agj"
+  password: "c4xKrVCf"
+
+development:
+  <<: *mysql
+
+production:
+  <<: *mysql
