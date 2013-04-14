@@ -1,32 +1,39 @@
-<div id="topscreen" >
-    <div id="cat">
-      <%= image_tag "cat.jpg",:size=>"160x218",:alt=>"cat" %>
-    </div>
-    <div id="message">
-       <p class="speech">You get 100 pt and 1 items!</p>
-	</div>
-</div>
-<div id="bottomscreen" >
+
+<div id="iphonescreen" >
     <form name="messages" onSubmit="return false"> 
 		<div id="menu">
-	    <%= link_to image_tag("button/button.png", alt: "b_talk",  width:"72", height:"41"), "/kid/talk" %>
-            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"72", height:"41"), "/kid/task/home" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>               
+	        <%= link_to image_tag("button/button.png", alt: "b_talk",  width:"72", height:"41"), "/oya/child/action" %>
+            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"72", height:"41"), "/oya/talk" %>
+            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/oya/task/list" %>
+            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/oya/task/gift" %>               
 		</div>
-		<div id="task-confirm">
+		<div id="oya-talk">
 			<center>
-				<div id="task-confirm-message">	
-					<h4>Congrats!You get this item!</h4>
-				</div>
-				<div id="task-image-confirm">
-	                                <%= image_tag "button/task.png",:size=>"60x30",:alt=>"task" %>	
-				</div>
-				<div id="select-button">
-                                    <%= link_to image_tag("button/button.png", alt: "b_task",  width:"70", height:"40"), "/kid/task/cat/up" %>
-                </div>        
+				<p class="speech-l">Welcome to KID-CAT!</p>
+				<p class="speech-r">Welcome to KID-CAT!</p>
+				<p class="speech-l">Welcome to KID-CAT!</p>
+				<p class="speech-r">Welcome to KID-CAT!</p>
+				<p class="speech-l">Welcome to KID-CAT!</p>
+				<p class="speech-r">Welcome to KID-CAT!</p>
+				<p class="speech-l">Welcome to KID-CAT!</p>
+				<p class="speech-r">Welcome to KID-CAT!</p>
 		    </center>
 		</div>
+		<div id="icon-oya">
+            <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"50", height:"50"), "/oya/talk" %>
+		    <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"50", height:"50"), "/oya/talk" %>
+		    <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"50", height:"50"), "/oya/talk" %>
+            <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"50", height:"50"), "/oya/talk" %>
+            <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"50", height:"50"), "/oya/talk" %>
+		    <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"50", height:"50"), "/oya/talk" %>
+		    <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"50", height:"50"), "/oya/talk" %>
+            <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"50", height:"50"), "/oya/talk" %>
+		</div>
+		<div id="input-oya">
+           <input type="text" name="field" size=32 value="Input text." onChange="nochange()"> <br>
+           <input type="button" onclick="func();" value="Send as cat">
+           <input type="button" onclick="func();" value="Send as parent">
+		</div>
+    </form>
     </form>
 </div>
-<script>document.body.scrollTop='218';</script>

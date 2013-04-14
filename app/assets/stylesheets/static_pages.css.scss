@@ -186,4 +186,245 @@ p.speech:after
 }
 
 
-/*******************************************************PARENT SCREEN  **************************************************/
+/*******************************************************PARENT SCREEN - child action **************************************************/
+#iphonescreen
+{
+  width:320px; 
+  height:420px; 
+  overflow: hidden;
+  background-image: image-url("iphone-bg.png");
+  background-color: #f8dce0;
+}
+#child-action
+{
+  width:305px;
+  height:355px; 
+  float:left;
+  overflow: auto;
+  overflow-x: hidden ; 
+  overflow-y: scroll;
+  background-color:#9A7596 ;
+  padding:4px;
+}
+
+#action
+{
+  width:300;
+  height:30px; 
+  overflow: hidden;
+  background-color:#FADBF7 ;
+  padding:4px;
+  margin:10px;
+  color:black;
+  text-align: center;
+}
+
+/*******************************************************PARENT SCREEN - talk **************************************************/
+
+#oya-talk
+{
+  width:305px;
+  height:230px; 
+  float:left;
+  overflow: auto;
+  overflow-x: hidden ; 
+  overflow-y: scroll;
+  background-color:#9A7596 ;
+  padding:4px;
+}
+/********************************************msg - left**************************************************/
+p.speech-l
+{
+position: relative;
+width: 210px;
+height: 90px;
+padding: 0px;
+background: #C6AFDD;
+border: #173D41 solid 2px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+p.speech-l:after
+{
+content: "";
+position: absolute;
+top: 16px;
+left: -15px;
+border-style: solid;
+border-width: 15px 15px 15px 0;
+border-color: transparent #C6AFDD;
+display: block;
+width: 0;
+z-index: 1;
+}
+
+p.speech-l:before
+{
+content: "";
+position: absolute;
+top: 15px;
+left: -18px;
+border-style: solid;
+border-width: 16px 16px 16px 0;
+border-color: transparent #173D41;
+display: block;
+width: 0;
+z-index: 0;
+}
+
+/********************************************msg - right**************************************************/
+p.speech-r
+{
+position: relative;
+width: 210px;
+height: 90px;
+padding: 0px;
+background: #EAD3C6;
+border: #173D41 solid 2px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+p.speech-r:after
+{
+content: "";
+position: absolute;
+top: 16px;
+right: -15px;
+border-style: solid;
+border-width: 15px 0 15px 15px;
+border-color: transparent #EAD3C6;
+display: block;
+width: 0;
+z-index: 1;
+}
+
+p.speech-r:before
+{
+content: "";
+position: absolute;
+top: 15px;
+left: 212px;
+border-style: solid;
+border-width: 16px 0 16px 16px;
+border-color: transparent #173D41;
+display: block;
+width: 0;
+z-index: 0;
+}
+
+
+
+#icon-oya
+{
+  width:320;
+  min-width:920px; 
+  height:60px; 
+  float:left;
+  overflow: auto;
+  overflow-x: scroll ; 
+  overflow-y: hidden;
+  background-color: #D1D6E7 ;
+  padding-top: 3px;
+  border: solid #4E1249;
+  }
+
+#input-oya
+{
+  width:320px; 
+  height:57px; 
+  overflow: hidden;
+  background-color: #f8dce0;
+  text-align:center;
+}
+
+/********************************************task list**************************************************/
+#child-task
+{
+  width:310px;
+  height:335px; 
+  float:left;
+  overflow: auto;
+  overflow-x: hidden ; 
+  overflow-y: scroll;
+  background-color:#9A7596 ;
+  padding:4px;
+}
+
+#task-item
+{
+  width:310;
+  height:40px; 
+  float:left ;
+  overflow: hidden;
+  background-color:#FADBF7 ;
+  padding:1px;
+  margin:5px;
+  left-margin:10px;
+  color:black;
+  text-align: center;
+}
+
+#add-task
+{
+  width:320px; 
+  height:30px; 
+  overflow: hidden;
+  background-color: #f8dce0;
+  text-align:center;
+}
+
+
+/********************************************item list**************************************************/
+#item-icon
+{
+  width:320;
+  height:170px; 
+  float:left;
+  background-color:#9A7596 ;
+  padding:4px;
+  overflow: auto;
+  overflow-x: scroll ; 
+  overflow-y: hidden;
+}
+
+.item-button
+{
+  width:55px;
+  height:55px; 
+  float:left;
+  overflow: hidden;
+  background-color: #FADBF7;
+  border: solid #4E1249;
+  padding: 4px;
+  margin: 4px; 
+}
+
+#coupon-list
+{
+  width:310px;
+  height:140px; 
+  float:left;
+  overflow: auto;
+  overflow-x: hidden ; 
+  overflow-y: scroll;
+  background-color:#9A7596 ;
+  padding:4px;
+}
+
+#item-coupon
+{
+  width:310;
+  height:30px; 
+  float:left ;
+  overflow: hidden;
+  background-color:#FADBF7 ;
+  padding:1px;
+  margin:5px;
+  left-margin:10px;
+  color:black;
+  text-align: center;
+}

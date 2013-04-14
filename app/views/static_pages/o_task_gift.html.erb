@@ -1,32 +1,57 @@
-<div id="topscreen" >
-    <div id="cat">
-      <%= image_tag "cat.jpg",:size=>"160x218",:alt=>"cat" %>
-    </div>
-    <div id="message">
-       <p class="speech">You get 100 pt and 1 items!</p>
-	</div>
-</div>
-<div id="bottomscreen" >
+<div id="iphonescreen" >
     <form name="messages" onSubmit="return false"> 
 		<div id="menu">
-	    <%= link_to image_tag("button/button.png", alt: "b_talk",  width:"72", height:"41"), "/kid/talk" %>
-            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"72", height:"41"), "/kid/task/home" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>               
+	        <%= link_to image_tag("button/button.png", alt: "b_talk",  width:"72", height:"41"), "/oya/child/action" %>
+            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"72", height:"41"), "/oya/talk" %>
+            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/oya/task/list" %>
+            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/oya/task/gift" %>               
 		</div>
-		<div id="task-confirm">
+		<div id="new-task">
 			<center>
-				<div id="task-confirm-message">	
-					<h4>Congrats!You get this item!</h4>
-				</div>
-				<div id="task-image-confirm">
-	                                <%= image_tag "button/task.png",:size=>"60x30",:alt=>"task" %>	
-				</div>
-				<div id="select-button">
-                                    <%= link_to image_tag("button/button.png", alt: "b_task",  width:"70", height:"40"), "/kid/task/cat/up" %>
-                </div>        
+			Select item
+				<div id="item-icon">
+		           <div class="item-button">
+		              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"58", height:"58"), "/oya/task/list" %>
+		           </div> 
+		            <div class="item-button">
+		              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"58", height:"58"), "/oya/task/list" %>
+		           </div>            
+		            <div class="item-button">
+		              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"58", height:"58"), "/oya/task/list" %>
+		           </div> 
+		           <div class="item-button">
+		              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"58", height:"58"), "/oya/task/list" %>
+		           </div> 
+			       <div class="item-button">
+		              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"58", height:"58"), "/oya/task/list" %>
+		           </div> 
+		            <div class="item-button">
+		              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"58", height:"58"), "/oya/task/list" %>
+		           </div>            
+		            <div class="item-button">
+		              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"58", height:"58"), "/oya/task/list" %>
+		           </div> 
+		           <div class="item-button">
+		              <%= link_to image_tag("button/task.png", alt: "b_task",  width:"58", height:"58"), "/oya/task/list" %>
+		           </div> 
+			    </div>
+			  Select coupon
+			    <div id="coupon-list">
+			    	<div id="item-coupon">
+                        coupon for Disney land!!
+			    	</div>
+			    	<div id="item-coupon">
+                        coupon for Disney land!!
+			    	</div>
+			    	<div id="item-coupon">
+                        coupon for Disney land!!
+			    	</div>			    	
+			    </div>
 		    </center>
+		</div>
+		<div id="add-task">
+            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"50", height:"30"), "/oya/task/list" %>
 		</div>
     </form>
 </div>
-<script>document.body.scrollTop='218';</script>
+
