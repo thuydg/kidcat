@@ -22,6 +22,14 @@ RailsApp::Application.routes.draw do
   match '/kid/item', to: 'static_pages#k_item'
   match '/kid/task/cat/up', to: 'static_pages#k_cat_up'
 
+
+  match '/oya/child/action', to: 'static_pages#o_child_action'
+  match '/oya/talk', to: 'static_pages#o_talk'
+  match '/oya/task/list', to: 'static_pages#o_task_list'
+  match '/oya/task/add', to: 'static_pages#o_task_add'
+  match '/oya/task/gift', to: 'static_pages#o_task_gift'
+  match '/oya/task/finish', to: 'static_pages#o_task_finish'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
