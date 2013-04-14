@@ -20,7 +20,7 @@ RailsApp::Application.routes.draw do
   match '/kid/task/doing/:id', to: 'static_pages#k_task_doing'
   match '/kid/task/finish', to: 'static_pages#k_task_finish'
   match '/kid/item', to: 'static_pages#k_item'
-  match '/kid/cat/up', to: 'static_pages#k_cat_up'
+  match '/kid/task/cat/up', to: 'static_pages#k_cat_up'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
