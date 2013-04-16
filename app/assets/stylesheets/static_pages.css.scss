@@ -9,8 +9,7 @@
   width:320px; 
   height:218px; 
   overflow: hidden;
-  background-image: image-url("logo.png");
-  background-color: #f8dce0;
+  background: image_url("top/bg320.gif");
 }
 
 #message
@@ -18,16 +17,21 @@
   width:160px; 
   height:218px; 
   overflow: hidden;
-  background-color: #f8dce0;
+#  background-color: #f8dce0;
+#  background: image_url("top/bg320.gif");
+  background: transparent;
   float:left;
 }
 
 #cat
 {
-  width:160px; 
-  height:218px; 
+  width:140px; 
+  height:188px; 
   overflow: hidden;
-  background-color: #f8dce0;
+#  background-color: #f8dce0;
+#  background: image_url("top/bg320.gif");
+  background: transparent;
+  margin: 10px;
   float:left;
 }
 
