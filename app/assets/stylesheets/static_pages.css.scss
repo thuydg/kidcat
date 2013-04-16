@@ -14,24 +14,30 @@
 
 #message
 {
-  width:160px; 
+  width:200px; 
   height:218px; 
   overflow: hidden;
 #  background-color: #f8dce0;
 #  background: image_url("top/bg320.gif");
   background: transparent;
+  margin-left: 10px;
+  margin-top:40px;
   float:left;
 }
 
 #cat
 {
-  width:140px; 
-  height:188px; 
+  width:95px; 
+  height:114px; 
   overflow: hidden;
 #  background-color: #f8dce0;
 #  background: image_url("top/bg320.gif");
   background: transparent;
-  margin: 10px;
+#  margin: 10px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
   float:left;
 }
 
@@ -39,7 +45,7 @@
 
 /********************************************************speech css for balloon**************************************************/
 
-p.speech
+p.speech-old
 {
   position: relative;
   width: 130px;
@@ -54,10 +60,11 @@ p.speech
   -webkit-box-shadow: 2px 2px 4px #888;
   -moz-box-shadow: 2px 2px 4px #888;
   box-shadow: 2px 2px 4px #888;
+
 }
 
 
-p.speech:before
+p.speech-old:before
 {
   content: ' ';
   position: absolute;
@@ -69,7 +76,7 @@ p.speech:before
   border-color: #666 transparent transparent #666;
 }
 
-p.speech:after
+p.speech-old:after
 {
   content: ' ';
   position: absolute;
@@ -82,6 +89,53 @@ p.speech:after
 }
 
 
+
+p.speech
+{
+position: relative;
+width: 135px;
+height: 70px;
+padding: 15px;
+background: #FFFFFF;
+border: #7F7F7F solid 2px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+font-size: 15px;
+}
+
+
+p.speech:after
+{
+content: "";
+position: absolute;
+top: 56px;
+right: -18px;
+border-style: solid;
+border-width: 8px 0 8px 18px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+}
+
+
+p.speech:before
+{
+content: "";
+position: absolute;
+top: 55px;
+left: 167px;
+border-style: solid;
+border-width: 9px 0 9px 19px;
+border-color: transparent #7F7F7F;
+display: block;
+width: 0;
+z-index: 0;
+}
+
+
+
 /*******************************************************bottom panel -  Talk **************************************************/
 
 #bottomscreen
@@ -89,7 +143,8 @@ p.speech:after
   width:320px; 
   height:212px; 
   overflow: hidden;
-  background-color: #f8dce0;
+  #background-color: #f8dce0;
+  background: image_url("top/underbg.gif");
 }
 
 #menu
@@ -97,7 +152,8 @@ p.speech:after
   width:320px; 
   height:42px; 
   overflow: hidden;
-  background-color: #371B2C;
+  #background-color: white;
+  background: transparent;
   padding: 4px;
 }
 
@@ -116,9 +172,10 @@ p.speech:after
 #input
 {
   width:320px; 
-  height:37px; 
+  height:50px; 
   overflow: hidden;
-  background-color: #f8dce0;;
+  background-color: #f8dce0;
+  vertical-align: top;
 }
 
 /*******************************************************bottom panel -  Task **************************************************/
@@ -129,18 +186,20 @@ p.speech:after
   height:170px; 
   float:left;
   overflow: hidden;
-  background-color:#9A7596 ;
+  #background-color:#9A7596 ;
+  background: transparent;
   padding:4px;
 }
 
 .task-button
 {
-  width:55px;
-  height:55px; 
+  width:62px;
+  height:62px; 
   float:left;
   overflow: hidden;
-  background-color: #FADBF7;
-  border: solid #4E1249;
+  background: transparent;
+ # background-color: #FADBF7;
+ # border: solid #4E1249;
   padding: 4px;
   margin: 4px; 
 }
@@ -153,7 +212,8 @@ p.speech:after
   height:170px; 
   float:left;
   overflow: hidden;
-  background-color:#9A7596 ;
+  #background-color:#9A7596 ;
+  background: transparent;
   padding:4px;
 }
 
@@ -162,30 +222,33 @@ p.speech:after
   width:320;
   height:40px; 
   overflow: hidden;
-  background-color:#9A7596 ;
+  #background-color:#9A7596 ;
+  background: transparent;
   padding:4px;
-  color:white;
+  color:black;
   text-align: center;
 }
 
 #task-image-confirm
 {
   width:320;
-  height:40px; 
+  height:60px; 
   overflow: hidden;
-  background-color:#9A7590 ;
+  #background-color:#9A7590 ;
+  background: transparent;
   padding:4px;
- text-align: center; 
+  text-align: center; 
 }
 
 #select-button
 {
   width:310px;
-  height:42px; 
+  height:20px; 
   float:left;
   overflow: hidden;
-  background-color: #FADBF7;
-  border: solid #4E1249;
+  #background-color: #FADBF7;
+  background: transparent;
+  #border: solid #4E1249;
   text-align: center;
 }
 
@@ -198,6 +261,7 @@ p.speech:after
   overflow: hidden;
   background-image: image-url("iphone-bg.png");
   background-color: #f8dce0;
+  background: image_url("top/underbg.gif");
 }
 #child-action
 {
@@ -207,7 +271,7 @@ p.speech:after
   overflow: auto;
   overflow-x: hidden ; 
   overflow-y: scroll;
-  background-color:#9A7596 ;
+  background-color:white ;
   padding:4px;
 }
 
@@ -227,13 +291,14 @@ p.speech:after
 
 #oya-talk
 {
-  width:305px;
-  height:230px; 
+  width:295px;
+  height:210px; 
   float:left;
   overflow: auto;
   overflow-x: hidden ; 
   overflow-y: scroll;
-  background-color:#9A7596 ;
+  background-color:white ;
+  margin: 10px;
   padding:4px;
 }
 /********************************************msg - left**************************************************/
@@ -341,7 +406,7 @@ z-index: 0;
   width:320px; 
   height:57px; 
   overflow: hidden;
-  background-color: #f8dce0;
+  background: image_url("top/underbg.gif");
   text-align:center;
 }
 
@@ -432,3 +497,83 @@ z-index: 0;
   color:black;
   text-align: center;
 }
+
+
+
+/****************************************************LIST ICON START*****************************************************************/
+.flickSimple {
+ width: 320px;
+ position: relative;
+ overflow: auto;
+ -webkit-tap-highlight-color: rgba(0,0,0,0);
+ background-color: white;
+}
+
+.flickSimple ul {
+ display: block;
+ margin: 0;
+ padding: 0;
+}
+
+.flickSimple ul li {
+ float: left;
+ list-style-type: none;
+ text-align: center;
+}
+
+#firstitem ul {
+ width: 1920px;
+}
+
+#firstitem ul li {
+ width: 100px;
+}
+
+#firstitem ul li a {
+ display: block;
+ height: 90px;
+ margin: 5px;
+ #border: solid 1px #ccc;
+ #background-color: #fff;
+ #line-height: 80px;
+}
+/****************************************************LIST ICON END*****************************************************************/
+
+/****************************************************LIST ICON  SMARTPHONE START*****************************************************************/
+.flickSimple-sp {
+ width: 320px;
+ position: relative;
+ overflow: auto;
+ -webkit-tap-highlight-color: rgba(0,0,0,0);
+ background-color: white;
+}
+
+.flickSimple-sp ul {
+ display: block;
+ margin: 0;
+ padding: 0;
+}
+
+.flickSimple-sp ul li {
+ float: left;
+ list-style-type: none;
+ text-align: center;
+}
+
+#firstitem-sp ul {
+ width: 1920px;
+}
+
+#firstitem-sp ul li {
+ width: 60px;
+}
+
+#firstitem-sp ul li a {
+ display: block;
+ height: 50px;
+ margin: 2px;
+ #border: solid 1px #ccc;
+ #background-color: #fff;
+ #line-height: 50px;
+}
+/****************************************************LIST ICON END  SMARTPHONE *****************************************************************/

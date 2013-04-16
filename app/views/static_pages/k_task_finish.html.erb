@@ -1,29 +1,29 @@
 <div id="topscreen" >
-    <div id="cat">
-      <%= image_tag "cat.jpg",:size=>"160x218",:alt=>"cat" %>
-    </div>
     <div id="message">
-       <p class="speech">You get 100 pt and 1 items!</p>
+       <p class="speech">1アイテムと100ポイントをもらいましたよ！!</p>
 	</div>
+    <div id="cat">
+      <%= image_tag "top/cat/cat_black.gif", :size=>"93x114", :alt=>"cat" %>
+    </div>
 </div>
 <div id="bottomscreen" >
     <form name="messages" onSubmit="return false"> 
 		<div id="menu">
-	    <%= link_to image_tag("button/button.png", alt: "b_talk",  width:"72", height:"41"), "/kid/talk" %>
-            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"72", height:"41"), "/kid/task/home" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>               
+	        <%= link_to image_tag("under/images/top_btm_01.gif", alt: "b_talk",  width:"72", height:"41"), "/kid/talk" %>
+            <%= link_to image_tag("under/images/top_btm_02.gif", alt: "b_task",  width:"72", height:"41"), "/kid/task/home" %>
+            <%= link_to image_tag("under/images/top_btm_03.gif", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>
+            <%= link_to image_tag("under/images/top_btm_04.gif", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>    
 		</div>
 		<div id="task-confirm">
 			<center>
 				<div id="task-confirm-message">	
-					<h4>Congrats!You get this item!</h4>
+					<h4>このアイテムをゲットしたよ！!</h4>
 				</div>
 				<div id="task-image-confirm">
-	                                <%= image_tag "button/task.png",:size=>"60x30",:alt=>"task" %>	
+	                 <%= image_tag "under/images/btm_02.gif",:size=>"60x60",:alt=>"task" %>	
 				</div>
 				<div id="select-button">
-                                    <%= link_to image_tag("button/button.png", alt: "b_task",  width:"70", height:"40"), "/kid/task/cat/up" %>
+                     <%= link_to image_tag("under/images/stamp/right.gif", alt: "b_task",  width:"20", height:"20"), "/kid/task/cat/up" %>
                 </div>        
 		    </center>
 		</div>

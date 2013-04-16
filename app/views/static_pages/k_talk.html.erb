@@ -1,34 +1,36 @@
 <div id="topscreen" >
-    <div id="cat">
-      <%= image_tag "cat.jpg",:size=>"160x218",:alt=>"cat" %>
-    </div>
-    <div id="message">
+     <div id="message">
        <p class="speech">Welcome to KID-CAT!</p>
-	</div>
+    </div>
+    <div id="cat">
+        <%= image_tag "top/cat/cat_black.gif",:size=>"93x114",:alt=>"cat" %>
+    </div>
 </div>
 <div id="bottomscreen" >
     <form name="messages" onSubmit="return false"> 
 		<div id="menu">
-	    <%= link_to image_tag("button/button.png", alt: "b_talk",  width:"72", height:"41"), "/kid/talk" %>
-            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"72", height:"41"), "/kid/task/home" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>    
-           
+            <%= link_to image_tag("under/images/top_btm_01.gif", alt: "b_talk",  width:"72", height:"41"), "/kid/talk" %>
+            <%= link_to image_tag("under/images/top_btm_02.gif", alt: "b_task",  width:"72", height:"41"), "/kid/task/home" %>
+            <%= link_to image_tag("under/images/top_btm_03.gif", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>
+            <%= link_to image_tag("under/images/top_btm_04.gif", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>          
 		</div>
-		<div id="icon">
-            <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %>
-      	    <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %>
-      	    <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %>
-            <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %>
-            <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %>
-      	    <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %>
-      	    <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %>
-            <%= link_to image_tag("icon/icon.png", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %>
-		</div>
+        <div class="flickSimple" id="firstitem">
+            <ul>
+                <li> <%= link_to image_tag("under/images/stamp/stamp_n.gif", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %></li>
+                <li><%= link_to image_tag("under/images/stamp/stamp_smaile.gif", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %></li>
+                <li><%= link_to image_tag("under/images/stamp/stamp_syobom.gif", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %></li>
+                <li> <%= link_to image_tag("under/images/stamp/stamp_n.gif", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %></li>
+                <li><%= link_to image_tag("under/images/stamp/stamp_smaile.gif", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %></li>
+                <li><%= link_to image_tag("under/images/stamp/stamp_syobom.gif", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %></li>
+                <li> <%= link_to image_tag("under/images/stamp/stamp_n.gif", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %></li>
+                <li><%= link_to image_tag("under/images/stamp/stamp_smaile.gif", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %></li>
+                <li><%= link_to image_tag("under/images/stamp/stamp_syobom.gif", alt: "b_talk",  width:"90", height:"90"), "/kid/talk" %></li>            
+            </ul>
+        </div>
 		<div id="input">
-           <input type="text" name="field" size=25 value="Input text." onChange="nochange()"> 
-           <input type="button" onclick="func();" value="Enter">
-		</div>
+           <input type="text" name="field" size=30 value="" onChange="nochange()"> 
+           <%= link_to image_tag("under/images/stamp/btm_sent.gif", alt: "b_talk",  width:"50", height:"25"), "/kid/talk" %>
+		</div>25
     </form>
 </div>
 <script>document.body.scrollTop='218';</script>
