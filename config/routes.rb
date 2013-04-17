@@ -14,7 +14,10 @@ RailsApp::Application.routes.draw do
   #get "static_pages/k_item"
 
   match '/kid/talk', to: 'static_pages#k_talk'
+  match '/kid/talk/2', to: 'static_pages#k_talk_2'  
   match '/kid/task/home', to: 'static_pages#k_task_home'
+  match '/kid/task/home/2', to: 'static_pages#k_task_home_2'
+  match '/kid/task/home/3', to: 'static_pages#k_task_home_3'
   match '/kid/task/do/:id', to: 'static_pages#k_task_do'
   match '/kid/task/doing', to: 'static_pages#k_task_doing'
   match '/kid/task/doing/:id', to: 'static_pages#k_task_doing'
@@ -25,7 +28,10 @@ RailsApp::Application.routes.draw do
 
   match '/oya/child/action', to: 'static_pages#o_child_action'
   match '/oya/talk', to: 'static_pages#o_talk'
+  match '/oya/talk/2', to: 'static_pages#o_talk_2'  
   match '/oya/task/list', to: 'static_pages#o_task_list'
+  match '/oya/task/list/2', to: 'static_pages#o_task_list_2'  
+  match '/oya/task/list/3', to: 'static_pages#o_task_list_3' 
   match '/oya/task/add', to: 'static_pages#o_task_add'
   match '/oya/task/gift', to: 'static_pages#o_task_gift'
   match '/oya/task/finish', to: 'static_pages#o_task_finish'

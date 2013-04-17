@@ -1,32 +1,30 @@
-<div id="topscreen" >
-    <div id="cat">
-      <%= image_tag "cat.jpg",:size=>"160x218",:alt=>"cat" %>
-    </div>
-    <div id="message">
-       <p class="speech">You get 100 pt and 1 items!</p>
-	</div>
-</div>
-<div id="bottomscreen" >
+<div id="iphonescreen" >
     <form name="messages" onSubmit="return false"> 
 		<div id="menu">
-	    <%= link_to image_tag("button/button.png", alt: "b_talk",  width:"72", height:"41"), "/kid/talk" %>
-            <%= link_to image_tag("button/button.png", alt: "b_task",  width:"72", height:"41"), "/kid/task/home" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>
-            <%= link_to image_tag("button/button.png", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>               
+	        <%= link_to image_tag("under/images/top_btm_04.gif", alt: "b_talk",  width:"72", height:"41"), "/oya/child/action" %>
+            <%= link_to image_tag("under/images/top_btm_01.gif", alt: "b_task",  width:"72", height:"41"), "/oya/talk" %>
+            <%= link_to image_tag("under/images/top_btm_02.gif", alt: "b_item",  width:"72", height:"41"), "/oya/task/list" %>
+            <%= link_to image_tag("under/images/top_btm_03.gif", alt: "b_item",  width:"72", height:"41"), "/oya/task/gift" %>              
+                         
 		</div>
-		<div id="task-confirm">
+        <div id="task-confirm">
 			<center>
 				<div id="task-confirm-message">	
-					<h4>Congrats!You get this item!</h4>
+					<h4>このおてつだいをこどもに頼みますね</h4>
 				</div>
 				<div id="task-image-confirm">
-	                                <%= image_tag "button/task.png",:size=>"60x30",:alt=>"task" %>	
+	                                <%= image_tag "under/images/btm_03.gif",:size=>"60x60",:alt=>"task" %>	
+	                                 <%= image_tag "SP/prezent/ribon_01.gif",:size=>"60x60",:alt=>"task" %>	
 				</div>
 				<div id="select-button">
-                                    <%= link_to image_tag("button/button.png", alt: "b_task",  width:"70", height:"40"), "/kid/task/cat/up" %>
+                                       <%= link_to image_tag("under/haiie/no.gif", alt: "b_task",  width:"30", height:"20"), "/oya/task/list/2" %>
+                                       <%= link_to image_tag("under/haiie/yes.gif", alt: "b_task",  width:"30", height:"20"), "/oya/task/list/3" %>
                 </div>        
 		    </center>
 		</div>
+
+	
+
     </form>
 </div>
-<script>document.body.scrollTop='218';</script>
+

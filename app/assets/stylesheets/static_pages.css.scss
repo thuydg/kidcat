@@ -220,6 +220,20 @@ z-index: 0;
   margin: 4px; 
 }
 
+.task-button-selected
+{
+  width:62px;
+  height:62px; 
+  float:left;
+  overflow: hidden;
+ # background: transparent;
+  background-color: pink;
+ # border: solid #4E1249;
+  padding: 4px;
+  margin: 4px; 
+}
+
+
 /*******************************************************bottom panel -  Task - do  **************************************************/
 
 #task-confirm

@@ -1,0 +1,48 @@
+<div id="topscreen" >
+    <div id="message">
+       <p class="speech"><br>お母さんから<br>お手伝いが来たよ！</p>
+    </div>  
+    <div id="cat">
+      <%= image_tag "top/cat/cat_shabom.gif",:size=>"93x114",:alt=>"cat" %>
+    </div>
+</div>
+<div id="bottomscreen" >
+    <form name="messages" onSubmit="return false"> 
+    <div id="menu">
+      <%= link_to image_tag("under/images/top_btm_01.gif", alt: "b_talk",  width:"72", height:"41"), "/kid/talk" %>
+            <%= link_to image_tag("under/images/top_btm_02.gif", alt: "b_task",  width:"72", height:"41"), "/kid/task/home" %>
+            <%= link_to image_tag("under/images/top_btm_03.gif", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>
+            <%= link_to image_tag("under/images/top_btm_04.gif", alt: "b_item",  width:"72", height:"41"), "/kid/item/" %>    
+  
+           
+    </div>
+    <div id="task-icon">
+           <div class="task-button">
+              <%= link_to image_tag("under/images/btm_01.gif", alt: "b_task",  width:"58", height:"58"), "/kid/task/do/1" %>
+           </div> 
+            <div class="task-button">
+              <%= link_to image_tag("under/images/btm_02.gif", alt: "b_task",  width:"58", height:"58"), "/kid/task/do/2" %>
+           </div>            
+            <div class="task-button-selected">
+              <%= link_to image_tag("under/images/btm_03.gif", alt: "b_task",  width:"58", height:"58"), "/kid/task/do/3" %>
+           </div> 
+           <div class="task-button">
+              <%= link_to image_tag("under/images/btm_04.gif", alt: "b_task",  width:"58", height:"58"), "/kid/task/do/4" %>
+           </div> 
+           <div class="task-button">
+              <%= link_to image_tag("under/images/btm_05.gif", alt: "b_task",  width:"58", height:"58"), "/kid/task/do/5" %>
+           </div> 
+            <div class="task-button">
+              <%= link_to image_tag("under/images/btm_06.gif", alt: "b_task",  width:"58", height:"58"), "/kid/task/do/6" %>
+           </div>            
+            <div class="task-button">
+              <%= link_to image_tag("under/images/btm_01.gif", alt: "b_task",  width:"58", height:"58"), "/kid/task/do/7" %>
+           </div> 
+           <div class="task-button">
+              <%= link_to image_tag("under/images/btm_02.gif", alt: "b_task",  width:"58", height:"58"), "/kid/task/do/8" %>
+           </div> 
+
+    </div>
+    </form>
+</div>
+<script>document.body.scrollTop='218';</script>
