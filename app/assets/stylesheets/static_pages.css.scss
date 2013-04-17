@@ -199,7 +199,7 @@ z-index: 0;
 #task-icon
 {
   width:320;
-  height:170px; 
+  height:320px; 
   float:left;
   overflow: hidden;
   #background-color:#9A7596 ;
@@ -430,7 +430,7 @@ z-index: 0;
 #child-task
 {
   width:310px;
-  height:335px; 
+  height:320px; 
   float:left;
   overflow: auto;
   overflow-x: hidden ; 
@@ -460,9 +460,10 @@ z-index: 0;
 #add-task
 {
   width:320px; 
-  height:30px; 
+  height:50px; 
   overflow: hidden;
-  background-color: #f8dce0;
+  #background-color: #f8dce0;
+  background: transparent;
   text-align:center;
 }
 
@@ -473,7 +474,8 @@ z-index: 0;
   width:320;
   height:170px; 
   float:left;
-  background-color:#9A7596 ;
+  #background-color:#9A7596 ;
+  background: transparent;
   padding:4px;
   overflow: auto;
   overflow-x: scroll ; 
@@ -486,8 +488,10 @@ z-index: 0;
   height:55px; 
   float:left;
   overflow: hidden;
-  background-color: #FADBF7;
-  border: solid #4E1249;
+  #background-color: #FADBF7;
+  #border: solid #4E1249;
+  
+  background: transparent;
   padding: 4px;
   margin: 4px; 
 }
@@ -500,22 +504,25 @@ z-index: 0;
   overflow: auto;
   overflow-x: hidden ; 
   overflow-y: scroll;
-  background-color:#9A7596 ;
+  #background-color:#9A7596 ;
+  background: transparent;
   padding:4px;
 }
 
 #item-coupon
 {
-  width:310;
-  height:30px; 
+  width:310px;
+  height:60px; 
   float:left ;
   overflow: hidden;
-  background-color:#FADBF7 ;
+  background-color:white ;
   padding:1px;
   margin:5px;
   left-margin:10px;
   color:black;
-  text-align: center;
+  #text-align: v-center;
+  #vertical-align: v-center;
+  font-size:20px;
 }
 
 
