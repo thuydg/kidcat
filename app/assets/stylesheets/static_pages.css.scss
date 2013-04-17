@@ -169,14 +169,30 @@ z-index: 0;
   background-color: #D1D6E7 ;
   padding-top: 15px;
 }
+
 #input
 {
   width:320px; 
   height:50px; 
   overflow: hidden;
-  background-color: #f8dce0;
+  #float:left;
+  #background-color: #f8dce0;
+  background: transparent;
   vertical-align: top;
+  text-align: center;
 }
+#text-input
+{
+  width:320px; 
+  height:50px; 
+}
+
+#input-button
+{  
+  width:100px; 
+  height:50px; 
+}
+
 
 /*******************************************************bottom panel -  Task **************************************************/
 
@@ -305,25 +321,25 @@ z-index: 0;
 p.speech-l
 {
 position: relative;
-width: 210px;
-height: 90px;
-padding: 0px;
-background: #C6AFDD;
-border: #173D41 solid 2px;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
+width: 205px;
+height: 120px;
+padding: 1px;
+background: #F0F8FF;
+border: #6B6B45 solid 2px;
+-webkit-border-radius: 18px;
+-moz-border-radius: 18px;
+border-radius: 18px;
 }
 
 p.speech-l:after
 {
 content: "";
 position: absolute;
-top: 16px;
+top: 80px;
 left: -15px;
 border-style: solid;
-border-width: 15px 15px 15px 0;
-border-color: transparent #C6AFDD;
+border-width: 8px 15px 8px 0;
+border-color: transparent #F0F8FF;
 display: block;
 width: 0;
 z-index: 1;
@@ -333,11 +349,11 @@ p.speech-l:before
 {
 content: "";
 position: absolute;
-top: 15px;
+top: 79px;
 left: -18px;
 border-style: solid;
-border-width: 16px 16px 16px 0;
-border-color: transparent #173D41;
+border-width: 9px 16px 9px 0;
+border-color: transparent #6B6B45;
 display: block;
 width: 0;
 z-index: 0;
@@ -347,39 +363,39 @@ z-index: 0;
 p.speech-r
 {
 position: relative;
-width: 210px;
-height: 90px;
-padding: 0px;
-background: #EAD3C6;
-border: #173D41 solid 2px;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
+width: 205px;
+height: 120px;
+padding: 1px;
+background: #FFC3CA;
+border: #6B6B45 solid 2px;
+-webkit-border-radius: 18px;
+-moz-border-radius: 18px;
+border-radius: 18px;
 }
 
 p.speech-r:after
 {
 content: "";
 position: absolute;
-top: 16px;
+top: 80px;
 right: -15px;
 border-style: solid;
-border-width: 15px 0 15px 15px;
-border-color: transparent #EAD3C6;
+border-width: 8px 0 8px 15px;
+border-color: transparent #FFC3CA;
 display: block;
 width: 0;
-z-index: 1;
+z-index: 1
 }
 
 p.speech-r:before
 {
 content: "";
 position: absolute;
-top: 15px;
-left: 212px;
+top: 79px;
+left: 209px;
 border-style: solid;
-border-width: 16px 0 16px 16px;
-border-color: transparent #173D41;
+border-width: 9px 0 9px 16px;
+border-color: transparent #6B6B45;
 display: block;
 width: 0;
 z-index: 0;
@@ -419,7 +435,8 @@ z-index: 0;
   overflow: auto;
   overflow-x: hidden ; 
   overflow-y: scroll;
-  background-color:#9A7596 ;
+  background-color:white ;
+  text-align: center;
   padding:4px;
 }
 
@@ -430,11 +447,14 @@ z-index: 0;
   float:left ;
   overflow: hidden;
   background-color:#FADBF7 ;
-  padding:1px;
   margin:5px;
-  left-margin:10px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  padding: 5px;
+  #left-margin:10px;
   color:black;
   text-align: center;
+  #vertical-align: center;
 }
 
 #add-task
