@@ -22,8 +22,8 @@ RailsApp::Application.routes.draw do
   match '/kid/task/doing', to: 'static_pages#k_task_doing'
   match '/kid/task/doing/:id', to: 'static_pages#k_task_doing'
   match '/kid/task/finish', to: 'static_pages#k_task_finish'
-  match '/kid/item', to: 'static_pages#k_item'
-  match '/kid/task/cat/up', to: 'static_pages#k_cat_up'
+  match '/kid/item', to: 'static_pages#k_task_home'
+  match '/kid/task/cat/up', to: 'static_pages#k_task_home_3'
 
 
   match '/oya/child/action', to: 'static_pages#o_child_action'

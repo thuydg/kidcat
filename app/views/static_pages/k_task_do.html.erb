@@ -1,6 +1,6 @@
 <div id="topscreen" >
     <div id="message">
-       <p class="speech">おてつだいいっしょにやりましょうか？!</p>
+       <p class="speech">おてつだいいっしょにやりましょうか？</p>
 	</div>
     <div id="cat">
         <%= image_tag "top/cat/cat_black.gif",:size=>"93x114",:alt=>"cat" %>
@@ -18,14 +18,15 @@
 		<div id="task-confirm">
 			<center>
 				<div id="task-confirm-message">	
-					<h4>このおてつだいをしませんか</h4>
+					<h4>このおてつだいをしますか</h4>
 				</div>
 				<div id="task-image-confirm">
 	                                <%= image_tag "under/images/btm_01.gif",:size=>"60x60",:alt=>"task" %>	
 				</div>
 				<div id="select-button">
+					                   <%= link_to image_tag("under/haiie/yes.gif", alt: "b_task",  width:"30", height:"20"), "/kid/task/doing/2" %>
                                        <%= link_to image_tag("under/haiie/no.gif", alt: "b_task",  width:"30", height:"20"), "/kid/task/home" %>
-                                       <%= link_to image_tag("under/haiie/yes.gif", alt: "b_task",  width:"30", height:"20"), "/kid/task/doing/2" %>
+
                 </div>        
 		    </center>
 		</div>
